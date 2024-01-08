@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+axios.defaults.withCredentials = true
+
 const URL = 'https://backendauth-vqbq.onrender.com/api'
 
 export const getTasksRequest = async () => axios.get(`${URL}/tasks`)
