@@ -1,4 +1,4 @@
-import axios from "./axios"
+import axios from "axios"
 
 const URL = 'https://backendauth-vqbq.onrender.com/api'
 
