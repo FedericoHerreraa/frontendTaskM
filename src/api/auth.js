@@ -1,8 +1,10 @@
-import axios from './axios.js'
+import axios from "./axios"
 
-export const registerRequest = async (user) => axios.post('/register', user)
+const URL = 'https://backendauth-vqbq.onrender.com/api'
 
-export const loginRequest = async (user) => axios.post('/login', user)
+export const registerRequest = async (user) => axios.post(`${URL}/register`, user)
 
-export const verifyTokenRequest = async () => axios.get('/verify')
+export const loginRequest = async (user) => axios.post(`${URL}/login`, user)
+
+export const verifyTokenRequest = async () => axios.get(`${URL}/verify`)
 
