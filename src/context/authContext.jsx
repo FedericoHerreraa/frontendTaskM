@@ -32,7 +32,6 @@ export const AuthProvider = ({ children }) => {
             console.log(error)
             setErrors(error.response.data.error);
         }
-
     }
 
     const logout = () => {

@@ -1,8 +1,8 @@
 import axios from "axios"
 
-axios.defaults.withCredentials = true
 
 const URL = 'https://backendauth-vqbq.onrender.com/api'
+axios.defaults.withCredentials = true
 
 export const registerRequest = async (user) => axios.post(`${URL}/register`, user)
 
