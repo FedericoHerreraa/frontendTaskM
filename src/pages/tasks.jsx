@@ -10,7 +10,7 @@ const Tasks = () => {
     }, [])
 
     return (
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-2 py-10">
             {tasks.length === 0 ? (<h1>No hay tareas</h1>) : (
                 tasks.map(task => (
                     <div key={task._id} className="bg-zinc-800 max-w-md w-full p-10 rounded-md my-10 mb-4">
